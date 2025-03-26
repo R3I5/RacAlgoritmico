@@ -5,3 +5,4 @@ sub = numero1-numero2
 mult = numero1*numero2
 div = numero1/numero2
 print("O resultado da soma é:",soma,",da subtração:",sub,", da multiplicação:",mult,", da divisão:",div)
+
