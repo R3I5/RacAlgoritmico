@@ -9,3 +9,4 @@ ladoB = area/ladoA
 print(f"O valor do lado B é:{ladoB}")
 d = math.sqrt((ladoA**2)+(ladoB**2))
 print(f"O valor da diagonal é:{d:.2f}")
+
