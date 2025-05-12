@@ -4,9 +4,9 @@
 altura = []
 idade = []
 for i in range(5):
-    idadePessoa = float(input(f'Insira a idade da {i+1}° pessoa'))
+    idadePessoa = float(input(f'Insira a idade da {i+1}° pessoa: '))
     idade.append(idadePessoa)
-    alturaPessoa = float(input(f'Insira a altura da {i+1}° pessoa'))
+    alturaPessoa = float(input(f'Insira a altura da {i+1}° pessoa: '))
     altura.append(alturaPessoa)
     
 print(f'Altura: {altura}')
