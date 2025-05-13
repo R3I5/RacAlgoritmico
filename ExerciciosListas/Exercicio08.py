@@ -3,11 +3,21 @@
 
 altura = []
 idade = []
-for i in range(5):
-    idadePessoa = float(input(f'Insira a idade da {i+1}° pessoa: '))
+
+alturaInversa = []
+idadeInversa = []
+
+for i in range(2):
+    idadePessoa = int(input(f'Insira a idade da {i+1}° pessoa: '))
     idade.append(idadePessoa)
     alturaPessoa = float(input(f'Insira a altura da {i+1}° pessoa: '))
     altura.append(alturaPessoa)
     
-print(f'Altura: {altura}')
+alturaInversa = list(reversed(altura))
+idadeInversa = list(reversed(idade))
+
 print(f'Idade: {idade}')
+print(f'Altura: {altura}')
+
+print(f'Idade inversa: {idadeInversa}')
+print(f'Altura inversa: {alturaInversa}')
