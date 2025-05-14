@@ -5,15 +5,15 @@ listaIdade = []
 listaAltura = []
 baixinhos = 0
 
-for a in range(5):
+for a in range(30):
     idades = int(input(f'Insira a idade do aluno {a+1}: '))
     listaIdade.append(idades)
     alturas = float(input(f'Insira a altura do aluno {a+1}: '))
     listaAltura.append(alturas)
     
-media = (sum(listaAltura)/5)
+media = (sum(listaAltura)/30)
 
-for i in range(5):
+for i in range(30):
     if listaIdade[i]>13 and listaAltura[i] < media:
         baixinhos += 1
 
