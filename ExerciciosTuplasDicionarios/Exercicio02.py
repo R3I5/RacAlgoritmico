@@ -37,8 +37,8 @@ while True:
         if unidadeOrigem not in ano_luz or unidadeDestino not in ano_luz:
             print("Unidade invalida!")
             continue
-        valorAnosLuz = valor/ano_luz[unidadeOrigem]
-        valorConvertido = valorAnosLuz * ano_luz[unidadeDestino]
+        valorOrigem = valor/ano_luz[unidadeOrigem]
+        valorConvertido = valorOrigem * ano_luz[unidadeDestino]
         print(f"Conversão: {valor} {unidadeOrigem} = {valorConvertido:.2f} {unidadeDestino}")
         print()
         continuar = input("Deseja fazer outra conversão? (s/n): ").strip().lower()
