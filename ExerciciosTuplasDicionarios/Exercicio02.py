@@ -19,4 +19,31 @@ while True:
     print("Iniciando conversão de unidades...")
     for unidade in unidades:
         print(unidade)
-    break
+    print()
+# Solicitar o valor que se deseja converter usando a frase "Valor a ser convertido: "
+    try:
+        valor = float(input("Valor a ser convertido: "))
+    
+# Solicitar a unidade origem do valor usando a frase "Converter de:"
+
+        unidadeOrigem = input("Converter de: ").strip().lower()
+    
+# Solicitar a unidade destino de conversão usando a frase "Converter para:"   
+    
+        unidadeDestino = input("Converter para:").strip().lower()
+        
+# Exibir o valor convertido 
+
+        if unidadeOrigem not in ano_luz or unidadeDestino not in ano_luz:
+            print("Unidade invalida!")
+            continue
+        valorAnosLuz = valor/ano_luz[unidadeOrigem]
+        valorConvertido = valorAnosLuz * ano_luz[unidadeDestino]
+        print(f"Conversão: {valor} {unidadeOrigem} = {valorConvertido:.2f} {unidadeDestino}")
+        print()
+        continuar = input("Deseja fazer outra conversão? (s/n): ").strip().lower()
+        if continuar != 's':
+            print("Até a proxima!")
+            break
+    except ValueError:
+        print("Valor inválido")
