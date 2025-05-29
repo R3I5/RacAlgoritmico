@@ -1,0 +1,28 @@
+1. Conceitos Fundamentais: Estrutuas de Dados
+Este tópico aborda a questão "relacionar coluna" e "explicar a diferença entre essas estruturas".
+
+1.a Relacione a Coluna A(Estrutura de Dados) com a Coluna B(Característica Principal):
+| Coluna A         | Coluna B                                    |
+| :--------------- | :------------------------------------------ |
+| 1\. Lista        | A. Coleção não ordenada de pares chave-valor |
+| 2\. Tupla        | B. Coleção ordenada e imutável de itens    |
+| 3\. Dicionário   | C. Coleção ordenada e mutável de itens     |
+Resposta:
+1 - C 
+2 - B
+3 - A 
+
+1.b Explique as principais diferenças entre Listas, Tuplas e Dicionarios em python, abordando os seguintes aspectos:
+*Mutabilidade(podem ser alterados após a criação?)
+*Ordenação(Os elementos mantêm uma ordem especifica?)
+*Sintaxe de criação(Como são definidos no código)
+*Uso comum(em que tipo de situação cada um é mais adequado?)
+Resposta:
+Listas: São estruturas mutáveis, com coleção ordenada. A sua sintaxe é lista = ["exemplo1","exemplo2"]. 
+São usadas quando é necessário uma coleção de itens que pode ser alterada, e a ordem dos itens é importante
+
+Tuplas: São estruturas imutáveis, com coleção ordenada. A sua sintaxa é tupla = ("exemplo1", "exemplo2").
+São usadas para dados que não devem ser alterados após a criação, como coordenadas geográficas, registros fixos ou como chaves em dicionários.
+
+Dicionários: São estruturas mutáveis, com coleção não ordenadas. As chaves são imutaveis, apenas o valor é mutavel. A sua sintaxe é: aluno = {"nome": "João", "idade": 20, "curso": "Engenharia"}
+São usadas para representar objetos do mundo real (como um cadastro de usuário), para contar frequência, ou quando você precisa acessar valores rapidamente através de um identificador único.
